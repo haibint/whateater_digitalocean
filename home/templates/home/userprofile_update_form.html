@@ -1,0 +1,5 @@
+<form action="" method="post">{% csrf_token %}
+    <!--{{ form.as_p }}-->
+    {% include 'home/form-template.html'%}
+    <input type="submit" value="Update" />
+</form>

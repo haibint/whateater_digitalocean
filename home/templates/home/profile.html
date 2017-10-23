@@ -1,0 +1,179 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WhatEater</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Clean Recipe App Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+    />
+    <link rel="shortcut icon" href="../../static/images/favicon.ico" type="image/x-icon">
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <meta charset utf="8">
+    <!--font-awsome-css-->
+    <link rel="stylesheet" href="../../static/css/font-awesome.min.css">
+    <!--bootstrap-->
+    <link href="../../static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--custom css-->
+    <link href="../../static/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../static/css/percircle.css">
+    <!--component-css-->
+    <script src="../../static/js/jquery-2.1.4.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <script src="../../static/js/Chart.js"></script>
+    <!--script-->
+    <script src="../../static/js/modernizr.custom.js"></script>
+    <script src="../../static/js/bigSlide.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+        });
+    </script>
+    <script type="text/javascript" src="../../static/js/move-top.js"></script>
+    <script type="text/javascript" src="../../static/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+
+    <!--script-->
+    <!-- swipe box js -->
+    <link rel="stylesheet" href="../../static/css/swipebox.css">
+    <script src="../../static/js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            $(".swipebox").swipebox();
+        });
+    </script>
+    <!-- //swipe box js -->
+
+
+    <!--script-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row">
+
+        <div class="menu-notify2">
+            <div class="profile-left">
+                <a href="{% url 'home:index' %}"><i class="fa fa-arrow-left"></i></a>
+                <!--deleted class="menu-link" -->
+            </div>
+            <div class="Profile-mid">
+                <h5 class="pro-link">Profile</h5>
+            </div>
+            <div class="Profile-right">
+                <div id="dd5" class="wrapper-dropdown-5" tabindex="1"><i class="fa fa-user"></i>
+                    <ul class="dropdown">
+                        <li><a href="https://whateatver-hbtang.c9users.io/update_profile">Edit Profile </a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                    <script type="text/javascript">
+                        function DropDown(el) {
+                            this.dd = el;
+                            this.initEvents();
+                        }
+                        DropDown.prototype = {
+                            initEvents: function() {
+                                var obj = this;
+                                obj.dd.on('click', function(event) {
+                                    $(this).toggleClass('active');
+                                    event.stopPropagation();
+                                });
+                            }
+                        }
+                        $(function() {
+                            var dd = new DropDown($('#dd5'));
+                            $(document).click(function() {
+                                // all dropdowns
+                                $('.wrapper-dropdown-5').removeClass('active');
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    </br>
+    </br>
+    
+
+    <div class="row">
+        <div class="text-center">
+            <img class="img-circle border-effect" src="{{ user_profile.user_icon.url }}" alt="">
+            <h3>{{user.username}}</h3><span><i class="fa fa-mars" aria-hidden="true"></i></span><span>    Lv.</span>
+            <!-- <i class="fa fa-venus" aria-hidden="true"></i>-->
+            <p>footprint: system not setup yet</p>
+        </div>
+    </div>
+    </br>
+    </br>
+    <div class="container">
+        <div class="row">
+            <div class="parker" id="service">
+                <div class="services">
+                    <h3>Services</h3>
+                    <div class="col-sm-6 goal-icons">
+                        <div class="goal">
+                            <div class=" hi-icon-effect-6">
+                                <a href="#set-6" class="hi-icon glyphicon glyphicon-file"></a>
+                                <h4>我的動態</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 goal-icons">
+                        <div class="goal">
+                            <div class=" hi-icon-effect-6">
+                                <a href="#set-6" class="hi-icon glyphicon glyphicon-print"></a>
+                                <h4>我的花費</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 goal-icons">
+                        <div class="goal">
+                            <div class=" hi-icon-effect-6">
+                                <a href="#set-6" class="hi-icon glyphicon glyphicon-cutlery"></a>
+                                <h4>評價留言</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 goal-icons">
+                        <div class="goal">
+                            <div class=" hi-icon-effect-6">
+                                <a href="#set-6" class="hi-icon glyphicon glyphicon-glass"></a>
+                                <h4>我的收藏</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

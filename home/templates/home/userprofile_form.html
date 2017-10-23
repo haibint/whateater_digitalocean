@@ -1,0 +1,11 @@
+<h1>Change Your Profile Picture Here!</h1>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="user_icon">Update your profile picture</label>
+    <input type="file" required name="user_icon"/>
+    <label for="username_update">Update your username</label>
+    <input type="text" name="username_update"/>
+    <input type="submit" value="Update Profile">
+</form>
+
+
